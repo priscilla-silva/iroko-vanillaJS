@@ -1,29 +1,36 @@
 body {
   background-color: lightsalmon;
 }
-
-main {
+i {
+  margin: 30px;
+  font-size: 20px;
+}
+#main {
   margin: 20px;  
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: margin-left .3s;
+  
 }
 
 header {
   display: flex;
   justify-content:flex-start;
-  margin: 20px;
+  
 }
 .closebtn {
-  float: right;
-  padding-left: 10px;
+  position:absolute;
+  left: 200px;
+  top:10px;
+  font-size: 20px;
 }
 
-nav {
+#sidenav {
   width:0;
   height: 100%;
   position: fixed;
-  padding-top: 20px;
+  padding-top: 50px;
   z-index: 1;
   top:0;
   left:0;
@@ -39,3 +46,4 @@ a {
 a:hover {
   color: lightsalmon;
 }
+
