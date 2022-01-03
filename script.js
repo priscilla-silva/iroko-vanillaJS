@@ -12,12 +12,17 @@ var modalBg = document.querySelector('.modal-bg');
 var modal = document.querySelector('.modal');
 var btn = document.querySelector('.subscribe');
 var x = document.querySelector('.newsletter-closebtn');
+var submit = document.querySelector('.submit');
 
 btn.addEventListener('click', function(){
   modalBg.classList.add('bg-active');
 });
 
 x.addEventListener('click', function(){
+  modalBg.classList.remove('bg-active');
+});
+
+submit.addEventListener('click', function(){
   modalBg.classList.remove('bg-active');
 });
 
